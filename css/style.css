@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu {
+	background: #000;
+	margin: 150px 0;
+	padding: 2px 60px;
+}
+.gradient {
+	background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+	padding: 2px 35px;
+}
+.menu-list {
+	text-align: right;
+}
+.menu-list-item {
+	display: inline-block;
+	vertical-align: top;
+	background: #fff;
+	margin: 0 25px 0 0;
+}
+.gradient .menu-list-item {
+	margin: 0 50px 0 0;
+}
+.menu span {
+	font: 32px/37px Helvetica, Arial  sans-serif;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+	padding: 30px 25px 29px 50px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.gradient span {
+	padding: 30px 25px 29px;
+}
+.menu-list-link span::after {
+	content: "";	
+   	display: block;
+   	width: 0;
+   	height: 0;
+   	border-style: solid;
+   	border-width: 48px 0 48px 25px;
+   	border-color: transparent transparent transparent #ffffff;
+   	position: absolute;
+   	right: -25px;
+   	top: 0;
+}
+.menu-list-link span::before {
+	content: "";	
+   	display: block;
+   	width: 0;
+   	height: 0;
+   	border-style: solid;
+   	border-width: 48px 0 48px 25px;
+   	border-color: transparent transparent transparent #000;
+   	position: absolute;
+   	left: 0;
+   	top: 0;
+}
+.gradient .menu-list-link span::before {		
+   border-color:  #fff transparent #fff;
+   position: absolute;
+   left: -25px;
+}
+
+.menu-list-link span:hover {
+	background: #CCCCCC;
+	transition: 1s;
+} 
+.menu-list-link span:hover::after {
+	border-color: transparent transparent transparent #CCCCCC;
+	transition: 1s;
+}
+.gradient .menu-list-link span:hover {
+	background-color: hsla(0, 0, 80%, 0.7); 
+	transition: 1s;
+} 	
+.gradien .menu-list-link span:hover::after {
+	border-color: transparent transparent transparent (204, 204, 204,.7);
+	transition: 1s;
+}
+.gradient .menu-list-link span:hover::before {		
+   border-top-color: rgba(204, 204, 204,1);
+   border-bottom-color: rgba(204, 204, 204,1);
+   transition: 1s;
+}
